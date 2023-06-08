@@ -318,6 +318,8 @@
     flex-wrap: wrap;
     width: 430px;
     height: 494px;
+    justify-content: space-between;
+    align-content: space-between;
 }
 .newli>li{
     width: 47%;
@@ -326,18 +328,15 @@
     padding-top: 20px;
     background: url("../img/main_menu_ico_new.png") no-repeat #fff;
     background-position: 95% 5%;
-    border: 10px solid white;
+    border: 8px solid white;
+    transition: all .5s;
 }
 .newli>li:hover{
-    border: 10px solid rgb(255, 212, 58);
+    border: 8px solid rgb(255, 212, 58);
 }
 .newli>li img{
     width: 80%;
 }
-.newli li:nth-child(odd){
-    margin-right: 3%;
-}
-.newli li:nth-child(1),
-.newli li:nth-child(2){
-    margin-bottom: 3%;
+.newli>li ul li:nth-child(2){
+    margin-bottom: 5px;
 }
